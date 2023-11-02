@@ -4,22 +4,23 @@
 import React from "react";
 import "./card.css";
 
-const card = (props) => {
+const Card = (props) => {
   return (
     // deconstruct your props object
     <div className="card-wrapper">
-      <img src="" alt="" className="card-image" />
+      <img src={props.img} alt="" className="card-image" />
       <div className="card-ratings-and-loc-wrapper">
-        <span className="card-rating">5.0</span>
-        <span className="card-review-count">(35)</span>
-        <span className="card-location">Japan</span>
+        <span className="card-rating">{props.rating}</span>
+        <span className="card-review-count">({props.reviewCount})</span>
+        <span className="card-location">{props.city}</span>
       </div>
-      <p className="card-description">There is some description</p>
+      <p className="card-title">{props.title}</p>
+      <p className="card-description">{props.description}</p>
       <p className="card-price-paragraph">
-        <span className="card-price-info">From $46</span> / person
+        <span className="card-price-info">From ${props.price}</span> / person
       </p>
     </div>
   );
 };
 
-export default card;
+export default Card;
