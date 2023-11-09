@@ -3,8 +3,9 @@ import "./App.css";
 // import HellowWorld from "./components/HelloWorld";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card/Card";
-import ReactStateTutorial from "./components/ReactStateTutorial";
+// import ReactStateTutorial from "./components/ReactStateTutorial";
 import FormsTutorial from "./components/FormsTutorial";
+import APITutorial from "./components/APITutorial";
 
 // import data
 import data from "./cardData";
@@ -29,8 +30,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ReactStateTutorial />
+      {/* <ReactStateTutorial /> */}
       <FormsTutorial />
+      <APITutorial />
       {/* <section className="product-card-parent-container">{cards}</section> */}
     </div>
   );
