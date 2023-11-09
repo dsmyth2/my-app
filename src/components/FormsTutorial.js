@@ -29,7 +29,6 @@ const FormsTutorial = () => {
 
   // form submission function
   function handleSubmit(e) {
-    // FIND THE CODE IN NOTES THIS MIGHT NOT BE ALL OF IT
     // use the state getter and acces the most uptodate value and send it wherever you need
     // if you do ont want to reset your form fields just bc the submit btn was clicked,
     // you need to override the reset behavior
